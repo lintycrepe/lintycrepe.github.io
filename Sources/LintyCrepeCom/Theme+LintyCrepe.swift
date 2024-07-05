@@ -162,8 +162,7 @@ private struct SiteHeader<Site: Website>: Component {
     var body: Component {
         Header {
             Wrapper {
-                Link(context.site.name, url: "/")
-                    .class("site-name")
+                Image(url: "/lintycrepelogo.jpeg", description: "Logo")
 
                 if Site.SectionID.allCases.count > 1 {
                     navigation

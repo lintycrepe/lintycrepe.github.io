@@ -1,9 +1,18 @@
-/**
-*  Publish Foundation theme
-*  Copyright (c) John Sundell 2019
-*  MIT license, see LICENSE file for details
-*/
+/* Color scheme */
+:root {
+    --burnt-siena: #d98162;
+    --peach: #f2b591;
+    --blizzard: #bbe2f2;
+    --rich-black: #141a26;
+    --space-cadet: #192033;
+    --white: #f2f2f2;
+    --gray: #e2e2e2;
+    --asparagus: #629460;
+    --pear: #d0e562;
+}
 
+
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +20,8 @@
 }
 
 body {
-    background: #fff;
-    color: #000;
+    background: var(--white);
+    color: var(--rich-black);
     font-family: Helvetica, Arial;
     text-align: center;
 }
@@ -26,7 +35,7 @@ body {
 }
 
 header {
-    background-color: #eee;
+    background-color: var(--space-cadet);
 }
 
 header .wrapper {
@@ -41,8 +50,15 @@ header a {
 
 header .site-name {
     font-size: 1.5em;
-    color: #000;
+    color: var(--white);
     font-weight: bold;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 nav {
@@ -84,7 +100,7 @@ a {
     display: block;
     padding: 20px;
     border-radius: 20px;
-    background-color: #eee;
+    background-color: var(--gray);
     margin-bottom: 20px;
 }
 
@@ -108,8 +124,8 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #000;
-    color: #ddd;
+    background-color: var(--space-cadet);
+    color: var(--gray);
     padding: 4px 6px;
     border-radius: 5px;
     margin-right: 5px;
@@ -142,14 +158,14 @@ a {
 }
 
 footer {
-    color: #8a8a8a;
+    color: var(--space-cadet);
 }
 
 /* Code Highlighting */
 
 pre {
     margin-bottom: 1.5em;
-    background-color: #1a1a1a;
+    background-color: var(--space-cadet);
     padding: 16px 0;
     border-radius: 16px;
 }
@@ -158,7 +174,7 @@ pre code {
     font-family: monospace;
     display: block;
     padding: 0 20px;
-    color: #a9bcbc;
+    color: var(--gray);
     line-height: 1.4em;
     font-size: 0.95em;
     overflow-x: auto;
@@ -171,57 +187,38 @@ pre code .keyword {
 }
 
 pre code .type {
-    color: #8281ca;
+    color: var(--pear);
 }
 
 pre code .call {
-    color: #348fe5;
+    color: var(--blizzard);
 }
 
 pre code .property {
-    color: #21ab9d;
+    color: var(--asparagus);
 }
 
 pre code .number {
-    color: #db6f57;
+    color: var(--burnt-siena);
 }
 
 pre code .string {
-    color: #fa641e;
+    color: var(--peach);
 }
 
 pre code .comment {
-    color: #6b8a94;
+    color: var(--gray);
 }
 
 pre code .dotAccess {
-    color: #92b300;
+    color: var(--asparagus);
 }
 
 pre code .preprocessing {
-    color: #b68a00;
+    color: var(--gray);
 }
 
 /* Media Queries */
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-    }
-
-    body,
-    header .site-name {
-        color: #ddd;
-    }
-
-    .item-list > li {
-        background-color: #333;
-    }
-
-    header {
-        background-color: #000;
-    }
-}
 
 @media(max-width: 600px) {
     .wrapper {
