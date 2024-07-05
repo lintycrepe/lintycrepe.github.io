@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "LintycrepeGithubIo",
+    name: "LintyCrepeCom",
     platforms: [.macOS(.v12)],
     products: [
         .executable(
-            name: "LintycrepeGithubIo",
-            targets: ["LintycrepeGithubIo"]
+            name: "LintyCrepeCom",
+            targets: ["LintyCrepeCom"]
         )
     ],
     dependencies: [
@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "LintycrepeGithubIo",
+            name: "LintyCrepeCom",
             dependencies: ["Publish"]
         )
     ]

@@ -3,7 +3,7 @@ import Publish
 import Plot
 
 // This type acts as the configuration for your website.
-struct LintycrepeGithubIo: Website {
+struct LintyCrepeCom: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case posts
@@ -14,12 +14,12 @@ struct LintycrepeGithubIo: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "LintycrepeGithubIo"
-    var description = "A description of LintycrepeGithubIo"
+    var url = URL(string: "https://lintycrepe.com")!
+    var name = "Linty Crepe"
+    var description = "Using Swift to explore the world."
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try LintycrepeGithubIo().publish(withTheme: .foundation)
+try LintyCrepeCom().publish(withTheme: .foundation)
