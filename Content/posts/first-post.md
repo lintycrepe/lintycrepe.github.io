@@ -1,8 +1,17 @@
 ---
 date: 2024-07-04 16:07
-description: A description of my first post.
-tags: first, article
+description: Hello world example
+tags: basic
 ---
-# My first post
+# Hello, world
 
-My first post's text.
+hello.swift
+```swift
+print("Hello, world!")
+```
+
+Compile and execute.
+```no-highlight
+swiftc hello.swift
+./hello
+```

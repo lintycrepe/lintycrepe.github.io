@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import SplashPublishPlugin
 
 // This type acts as the configuration for your website.
 struct LintyCrepeCom: Website {
@@ -22,4 +23,11 @@ struct LintyCrepeCom: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try LintyCrepeCom().publish(withTheme: .foundation)
+try LintyCrepeCom().publish(using: [
+    .installPlugin(.splash(withClassPrefix: "")),
+    .addMarkdownFiles(),
+    .copyResources(),
+    .generateHTML(withTheme: .lintycrepe),
+    .generateRSSFeed(including: [.posts]),
+    .generateSiteMap(),
+])
