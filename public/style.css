@@ -1,0 +1,46 @@
+/* Color scheme */
+:root {
+    --burnt-siena: #d98162;
+    --peach: #f2b591;
+    --blizzard: #bbe2f2;
+    --rich-black: #141a26;
+    --space-cadet: #192033;
+    --white: #f2f2f2;
+    --gray: #e2e2e2;
+    --asparagus: #629460;
+    --pear: #d0e562;
+}
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+    color: var(--rich-black);
+    font-family: Helvetica, Arial;
+    text-align: center;
+    height: 100%
+}
+
+header {
+    background-color: var(--space-cadet);
+    height: 100vh;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1.5em;
+    color: var(--white);
+    font-weight: bold;
+}
